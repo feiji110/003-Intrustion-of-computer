@@ -1,0 +1,72 @@
+nums = [11, 22, 33, 44]
+nums.insert(1, 15)
+# 11 15 22 33 44
+print(nums)
+c = nums.pop(1)
+print(nums)
+print(c)
+nums.append(22)
+nums.append(22)
+# 11 22 33 44 22 22
+nums.remove(22)
+print(nums)
+nums.reverse()
+print(nums)
+
+# num1 = [1, 2, 3]
+# num2 = [3, 4, 5]
+# num1.extend(num2)
+# print(num1)
+# num1 = num1 + num2
+# print(num1)
+
+# nums = [1, 2, 3, 4, 1, 2, 1, 2, 1, 2]
+# print(nums.count(1))
+# # count() 统计列表里面指定元素个数
+
+# nums = [11, 22, 33, 44, 55]
+# # copy() 等价于 分片[:]
+# nums2 = nums.copy()
+# nums4 = nums[:]
+# # 列表不能直接赋值，直接赋值相当于给一个列表起了一个别名
+# nums3 = nums
+# nums2[0] = 100
+# nums3[0] = 100
+# print(nums)
+# print(nums2)
+# print(nums3)
+
+# # 在列表末尾增加一个元素
+# nums.append(66)
+# print(nums)
+# # 将列表清空
+# nums.clear()
+# print(nums)
+
+# nums1 = [11, 22, 33]
+# nums2 = [44, 55, 66]
+# nums3 = nums1 + nums2
+# print(nums3)
+# nums4 = nums1 * 3
+# print(nums4)
+# # 加法实现了列表的拼接
+
+
+# #        0   1   2   3   4   5
+# nums = [11, 22, 33, 44, 55, 66]
+# nums3 = nums[::-1]  # 5 : -1
+# nums2 = nums[::1]  # 0 : 6
+# # 如果步长是正数 index1 <= index2
+# # index1 ~ index2-1
+# # 如果步长是负数 index1 >= index2
+# # index1 ~ index2+1
+# print(nums2)
+# print(nums3)
+
+# nums = [11, 22, 33, 44, 55, 66]
+# nums[2] = 34
+# print(nums[2])
+# # 如果索引是正数的时候，最大值是列表元素个数-1
+# # 0 ~ n-1
+# # 如果索引是负数的时候，从列表后面往前数
+# # -1 ~ -n

@@ -1,0 +1,116 @@
+# >=90  优
+# >=80  良
+# >=60  中
+#       差
+nums = int(input("请输入你的成绩："))
+if nums > 100 or nums < 0:
+    print("数据错误")
+elif nums >= 90:
+    print("优")
+elif nums >= 80:
+    print("良")
+elif nums >= 60:
+    print("中")
+else:
+    print("差")
+
+# num = int(input("请输入一个数字:"))
+# if     有且仅能出现1次，最先判断
+# elif   任意多次 0~n，前面条件都不满足才判断
+# else   1次或0次，最后判断
+
+
+# if num == 0:
+#     print("零")
+# elif num % 2 == 0:
+#     print("偶数")
+# else:
+#     print("奇数")
+
+# if num % 2 == 0:
+#     if num == 0:
+#         print("零")
+#     else:
+#         print("偶数")
+# else:
+#     print("奇数")
+
+# print("程序结束了")
+
+
+# dict 字典，map，键值对 key:value
+# dict1 = {"zhangsan": 18, "lisi": 19,
+#          "wangwu": 20, "yanxiaoliu": 45}
+# # 通过key值可以获取或修改对应value值
+# print(dict1["wangwu"])
+# dict1["wangwu"] = 60
+# print(dict1["wangwu"])
+# # key存在则改之，不存在则加之
+# dict1["chenxiaoer"] = 30
+# print(dict1)
+# # pop()
+# dict1.pop("chenxiaoer")
+# print(dict1)
+
+# 输入：wu yan zu
+# 输出：zu yan wu
+# str1 = input("输入：")
+# list1 = str1.split(" ")
+# list1 = list1[::-1]
+# str1 = " ".join(list1)
+# print("输出：%s" % str1)
+
+# join() 通过指定字符串连接数列所有元素
+# str1 = "."
+# list1 = ["127", "0", "0", "1"]
+# print(str1.join(list1))
+
+# split() 根据指定字符，将源字符串拆分成一个数列
+# str1 = "192.168.17.1"
+# list1 = str1.split(".")
+# print(list1)
+# str2 = "zhang sanxiao"
+# xing = str2.split(" ")[0]
+# print(xing)
+
+# replace() 字符串指定子串进行替换
+# 子串无论出现几次，都会完成替换
+# str1 = "ni hao zhang san"
+# str1 = str1.replace("zhang", "li")
+# print(str1)
+# str2 = "ni hao zhang hao"
+# str2 = str2.replace("zhang hao", "zhang san")
+# print(str2)
+
+# swapcase() 将字符串中字符大小写转换
+# str1 = "ZHANG san"
+# str1 = str1.swapcase()
+# print(str1)
+
+# upper() 将字符串中小写字母转换成大写
+# str1 = "ZHANG san"
+# str1 = str1.upper()
+# print(str1)
+
+# lower() 将字符串中大写字母转换成小写
+# str1 = "ZHANG san"
+# str1 = str1.lower()
+# print(str1)
+
+# strip() 去掉字符串首尾指定字符
+# 生成新的字符串，不会对源字符串做修改
+# str1 = "                 zhangsan  "
+# str1 = str1.strip(" ")
+# print(str1)
+
+# find() 寻找子串的位置，没有找到返回-1
+# str1 = "zhang san ni hao"
+# str2 = "sang"
+# print(str1.find(str2))
+
+# # 输入r，求圆的面积
+# # 运行效果如下：
+# #   请输入圆的半径：1
+# #   圆面积为：3.14
+# r = float(input("请输入圆的半径："))
+# print("圆面积为：%.2f" % (3.14 * r ** 2))

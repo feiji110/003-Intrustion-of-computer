@@ -1,0 +1,64 @@
+# 打印99乘法口诀表
+# 1*1=1
+# 1*2=2 2*2=4
+# 1*3=3 2*3=6 3*3=9
+# 1*4=4 2*4=8 3*4=12 4*4=16
+# ....
+i = 1
+while i < 10:  # 1-9
+    j = 1
+    while j <= i:  # 1-i
+        print("%d*%d=%d" % (j, i, j*i), end=" ")
+        j = j + 1
+    print("")
+    i = i + 1
+
+# i = 0
+# while True:
+#     print(i)
+#     i = i + 1
+#     if i >= 100:
+#         break
+
+# continue  停止本次循环，执行下次循环
+# break     跳出循环、结束循环
+
+
+# 输入n，求n的阶乘
+# n = int(input("请输入n的值"))
+# i = 1
+# result = 1
+# while i <= n:
+#     result = i * result
+#     i = i + 1
+# print(result)
+
+# i = 1
+# while i < 101:
+#     print(i)
+#     i = i + 1
+# # 当i的值 >=100 时，不执行循环
+
+
+# # 运行效果：
+# #    输入： 10 * 2
+# #    输出： 20
+# #    输入： 10 - 9
+# #    输出： 1
+# #    输入： 9 / 2
+# #    输出： 4.50
+# str1 = input("输入：")
+# list1 = str1.split(" ")
+# num1 = int(list1[0])
+# num2 = int(list1[2])
+# if list1[1] == "+":
+#     print(num1 + num2)
+# elif list1[1] == "-":
+#     print(num1 - num2)
+# elif list1[1] == "*":
+#     print(num1 * num2)
+# elif list1[1] == "/":
+#     if num2 == 0:
+#         print("除数不能是0")
+#     else:
+#         print("%.2f" % (num1 / num2))
