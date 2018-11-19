@@ -1,0 +1,108 @@
+m = int(input('please input the orginal number system'))
+n = int(input('please input the objective number system'))
+m_str = input('the orginal integer ')
+
+if(float(m_str)==int(float(m_str))):
+        m_number = int(m_str,m)#get the numeric value of m
+        symbol = ''
+
+        if(m_number<0):#figure out the final symbol
+                m_number = abs(m_number)#get positive value
+                symbol = '-'
+
+        if(n == 10):# m convert to 10
+                print(symbol+str(m_number))
+        else:#10 convert to n
+                ans = ''
+                while(m_number):
+                        ans = str(m_number%n) + ans#doing the mod
+                        m_number = m_number//n#warning!!: using // not /
+                print(symbol+ans)#print the answer
+else:
+        print('input is not integer')
+
+#随机点名应用
+import random as R
+P=R.randint(1,9)
+L=R.randint(1,6)
+S=["左","右"]
+C=R.choice (S)
+print("请%s侧%d排%d列的同学回答老师问题"%(C,P,L))
+#判断是否是回文字符串
+S=input("请输入一个字符串:")
+L=S[::-1]
+if S==L:
+     print("是回文字符串")
+else:
+    print("不是回文字符串")
+#今天是今年的第几天
+S=(input("enter:"))
+S=S.split("/")
+L=[]
+for a in S:
+    L.append(int(a))
+P1=L.pop(0);P2=L.pop(0)
+if P1==1:
+    print("这是2018年的第%d天"%P2)
+elif P1==2:
+    print("这是2018年的第%d天"%(P2+31))
+elif P1==3:
+    print("这是2018年的第%d天" % (P2 + 59))
+elif P1 == 4:
+    print("这是2018年的第%d天" % (P2 + 90))
+elif P1==5:
+    print("这是2018年的第%d天" % (P2 + 120))
+elif P1 == 6:
+    print("这是2018年的第%d天" % (P2 + 151))
+elif P1==7:
+    print("这是2018年的第%d天" % (P2 + 181))
+elif P1 == 8:
+    print("这是2018年的第%d天" % (P2 + 212))
+elif P1 == 9:
+    print("这是2018年的第%d天" % (P2 + 243))
+elif P1 == 10:
+    print("这是2018年的第%d天" % (P2 + 273))
+elif P1 == 11:
+    print("这是2018年的第%d天" % (P2 + 304))
+else:
+    print("这是2018年的第%d天" % (P2 + 334))
+11-10
+#一
+n=1
+while True:
+    i=63*n
+    if (i%2==1)and(i%4==1)and(i%5==4)and(i%6==3)and(i%8==1):
+        print(i)
+        break
+    n=n+1
+#二
+def fun(n,x):
+    a=[0,1,2,3,4,5,6,7,8,9,'A','b','C','D','E','F']
+    b=[]
+    while True:
+        s=n//x;y=n%x
+        b=b+[y]
+        if s==0:
+            break
+        n=s
+    b.reverse()
+    for i in b:
+        print(a[i],end='')
+fun(666,int(input("enter:")))
+#三
+s=input("enter:")
+l=s.split(sep=",")
+l=[int(e)for e in l]
+def fun(l):
+    for i in range(len(l) - 1):
+        for j in range(len(l) - 1 - i):
+            if l[j] > l[j + 1]:
+                l[j], l[j + 1] = l[j + 1], l[j]
+fun(l)
+print(l[-2])
+
+
+
+
+
+

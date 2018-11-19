@@ -1,0 +1,31 @@
+r=float(input("请输入半径："))
+print("圆的面积为：%.2f" % (3.14*r**2)
+
+l =[]
+i = 0
+while (i < 6):
+    x = input ("enter:",end(" "))
+    l.append(x)
+    i =i+1
+print(l)
+
+N = [0,1,2,3,4,5,6,7,8,9]
+N[2] = 34#写入语句
+T = N[1:5:-1]
+print(T)
+
+#Python大约能够保证能十进制的17位精度
+#IEEE754标准
+#无法使用固定的字节表示无限的数字导致浮点数类型丢失精度（组成原理 ）
+
+11-10
+i=0
+while (1==1):
+    if (i%9==0)and(i%7==0)and(i%3==0)and(i%8==1)and(i%2==1)and(i%4==1)and(i%6==3)and(i%8==1)and(1%5==4):
+        print(i)
+        break
+    else:
+        i=i+9
+else:
+    i=i+9
+print(i)

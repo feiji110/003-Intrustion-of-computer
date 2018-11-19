@@ -1,0 +1,114 @@
+#find,strip
+str1= "zhang san m i"
+str2= "m"
+print(str1.find(str2))
+
+str1="            zhangsan"
+str1=str1.strip()
+print(str1)
+
+
+
+数值型：整数四字节  -2^31   2^31（-2147 483 648到2147 483 647
+只Python3.0以后vision不考虑范围
+B O/Q（0o） D H（0x)
+
+10-23
+#  &:两个操作数的二进制按位进行与运算
+#0~n-1  -1~-n
+#如果stride是正数，index1<=index2即Index1~index2-1
+#如果stride是负数，index1>=index2即index1~index2+1
+10-19
+#python/结果为小数，//向负无穷靠近,找最近的整数，余数=被除数-除数*（被除数 整除 除数）
+#**求次幂
+#（）更改运算优先级
+#浮点的存储，Python使用8个字节，内存中64位，只使用52位表数据，可表53位的二进制精度
+#十进制0.05 二进制0.001=1*2^-3
+#IEEE754标准
+#无法使用固定的字节表示无限的数字导致浮点数类型丢失精度（组成原理 ）
+
+
+
+
+
+
+
+
+
+
+
+
+#lower(),upper(),swapcase(),split
+str2= "zhang san xiao"
+xing= str2.split(" ")[0]
+print(xing)
+
+str1="."
+list1 = ["127","9","0" ]
+print(str1.join(list1))
+
+N = [0,1,2,3,4,5,6,7,8,9]
+N[2] = 34#写入语句
+N.append(88)#末尾增添
+print(N[2])#读取语句
+print(N.count(1))#找1个数
+N.insert(1,12)#1位置上潜入12
+print(len(N))
+print(max(N))
+print(min(N))
+
+#/除法  //整除  %取余
+Ctrl+Shift+F10=run
+Alt+Shift+F10=edit 
+
+#元组
+t = (11,22,33,44)
+t = t[: :-1]
+print(t)
+#输入
+N=input("Please input your salary:")
+print(N)
+
+print("enter")
+str1 = input()
+print(str1)
+#简化，第二种还可以是print("enter",end="")
+
+# % 格式转换符
+name = "Danny.Smith"
+age = 18
+sal = 1.2
+print("Hello,%%I know your name is %s.your age is %d.your Salary is %.60f."%(name,age,sal))
+#阶乘
+def f(n):
+    s=1
+    for i in range(1,n+1):
+        s*=i
+    print(s)
+f(5)
+#阶乘二
+def f(n):
+    if n==1:
+        return 1
+    return n*f(n-1)
+print(f(3))
+#斐波那契数列
+def f(n):
+    if n==1 or n==2:
+        return 1
+    else:
+        return  f(n-1)+f(n-2)
+print(f(4))
+#阶梯种类
+def f(n):
+    if n==1 or n==2:
+        return 2
+    return f(n-1)+f(n-2)
+print(f(4))
+#水仙数
+def f():
+    for i in range(100,1000):
+        s=(i//100)**3+(i//10%10)**3+(i%10)**3
+        if i==s:
+            print(i)
+f()

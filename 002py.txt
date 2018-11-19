@@ -1,0 +1,127 @@
+print(-100%3)
+tab
+自动补齐
+
+alt + P
+前一个命令
+
+alt + N
+下一个命令
+
+"""    """
+三重引号为注释（也可以用单引号）
+
+# 改行后面的都为注释
+
+
+查看Python模块的位置
+
+>> > import sys
+
+>> > sys.path
+
+['E:\\Python34\\Lib\\idlelib', 'C:\\Windows\\system32\\python34.zip', 'E:\\Python34\\DLLs', 'E:\\Python34\\lib',
+ 'E:\\Python34', 'E:\\Python34\\lib\\site-packages']
+
+import 模块
+
+模块名.函数名（数据）
+
+数据.函数（）
+
+
+
+dir(__builtins__)
+查看pyton内置函数
+
+help(input)
+看input()
+用法
+
+数据的添加和删除
+
+>> > movies = ["The holy grail", "the life of brian", "the meaning of life"]
+
+append(), pop()
+用于增加或者删除末尾的数据
+
+extend()
+用于在列表后面加一个数据项集合
+
+remove()
+删除一个特定的数据项
+
+insert()
+在某个具体的位置加上数据
+
+>> > movies.append("wo de ")
+
+>> > print(movies)
+
+['The holy grail', 'the life of brian', 'the meaning of life', 'wo de ']
+
+>> > movies.pop()
+
+'wo de '
+
+>> > print(movies)
+
+['The holy grail', 'the life of brian', 'the meaning of life']
+
+>> > movies.extend(["gillima", "chapam"])
+
+>> > print(movies)
+
+['The holy grail', 'the life of brian', 'the meaning of life', 'gillima', 'chapam']
+
+>> > movies.remove("chapam")
+
+>> > print(movies)
+
+['The holy grail', 'the life of brian', 'the meaning of life', 'gillima']
+
+>> > movies.insert(0, "1")
+
+>> > print(movies)
+
+['1', 'The holy grail', 'the life of brian', 'the meaning of life', 'gillima']
+
+>
+
+len处理列表时候表示列表元素的个数，处理元素的时候表示元素的字符个数。
+
+>> > for num in range(4):
+    print(num)
+
+0
+
+1
+
+2
+
+3
+
+# 这个里面是不好4的。
+
+
+(role, line_spoken) = each_line.split(':', 1)
+
+line_spoken = line_spoken.strip()
+
+# strip(去掉开头和结尾处的空白符，\n,\r, \t)
+
+
+(mins, secs) = time_string.split(splitter)
+
+return (mins + '.' + secs)
+
+# 注意上面的+用来连接两部分
+
+
+if '-' in time_string:
+    splitter = '-'
+
+# 注意in的作用
+
+
+set()  # 工厂函数，用于去掉重复的部分，没有重复的数据叫集合。
